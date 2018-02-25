@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>CITY GYM</title>
+		<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+		<meta name="description" content="IAW 5 Task - 2º ASIR">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel='stylesheet' media='screen and (min-width: 961px)' href='css/d.css'>
+		<link rel='stylesheet' media='screen and (max-width: 960px)' href='css/m.css'>
+		<script src="js/city_gym.js"></script>
+	</head>
+
+<body>
+	<!--Logo and header-->
+	<div id="homeDiv">
+		<br/>
+		<img src="img/city_logo.jpg" alt="City Gym logo">
+		<div>
+			<h2><b><i>* CITY GYM *</i></b></h2>
+			<h3><b><i>¡ Mens sana in corpore sano !<br/><br/>
+			Sports Center City Gym - Palacio de los deportes - 08002 Madrid<br/></i></b></h3>
+		</div>
+	</div>
+	<!--Main menu-->
+<div class="topnav" id="myTopnav">
+	<a href="home.html"><b>Home</b></a>
+	<a class="active" href="city_gym.html"><b>Join us</b></a>
+	<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+	<!--Side images-->
+<img class="pub" src="img/pub.jpg" alt="publ">
+<img id="i2" src="img/city_img2.jpg" alt="Image 2">
+<img class="pub" src="img/pub.jpg" alt="publ">
+<img id="i3" src="img/city_img3.jpg" alt="Image 3">
+<img class="pub" src="img/pub.jpg" alt="publ">
+<!--Main container-->
+<main>
+	<!--Explains what this is for-->
+	<div>
+		<div>
+			<p>
+				&emsp;We want to invite you to join our sports club, CITY GYM, and carry out a healthy life. <br/><br/>
+				&emsp; Bodybuilding, spinning ... and more than you can imagine to achieve your goal: perfect health in
+				a great body appearance. <br/><br/>
+				&emsp; Choose what you need to find your way and focus only on your work ... we take care of the rest. Complete the form below with your preferences and send it now to see the amount of your select enrollment.<br/><br/>
+				&emsp;Thanks for choosing us and enjoy our HEALTHY WAY OF LIFE.<br/>
+			</p>
+		</div>
+	</div>
+
+	<div>
+	<!--Start the form to be filled-->
+		<form method="post" action="city_gym.php">
+		<!--Text input-->
+			<b>Your name: </b><br/>
+			&emsp;Firstname:&emsp;
+			<input name="fnom" type="text">
+			<br/>&emsp;Surname:&emsp;
+			<input name="snom" type="text"><br/><br/>
+		<!--Radio buton input-->
+			<b>Select your training level:</b><br/><br/>
+			&emsp;<input name="level" TYPE="radio" VALUE="Beginner">&emsp;Beginner (25€/month)<br/>
+			&emsp;<input name="level" TYPE="radio" VALUE="Fitness">&emsp;Fitness (30€/month)<br/>
+			&emsp;<input name="level" TYPE="radio" VALUE="Advanced">&emsp;Advanced (35€/month)<br/>
+			&emsp;<input name="level" TYPE="radio" VALUE="Pro">&emsp;Pro (50€/month)<br/><br/>
+		<!--Hidden inputs for radio select-->
+			<input type="hidden" name="amount[0]" value="25">
+			<input type="hidden" name="amount[1]" value="30">
+			<input type="hidden" name="amount[2]" value="35">
+			<input type="hidden" name="amount[3]" value="50">
+		<!--Radio buton input-->
+			<b>Choose services:</b><br/><br/>
+			&emsp;<input name="sel1" TYPE="checkbox" VALUE="Shower">&emsp;Shower (+10€/month)<br/>
+			<input type="hidden" name="pri1" value="10">
+			&emsp;<input name="sel2" TYPE="checkbox" VALUE="Towels">&emsp;Towels (+8€/month)<br/>
+			<input type="hidden" name="pri2" value="8">
+			&emsp;<input name="sel3" TYPE="checkbox" VALUE="Locker">&emsp;Locker (+5€/month)<br/>
+			<input type="hidden" name="pri3" value="5"><br/><br/><br/>
+		<!--Multiple text input-->
+			<b>Training classes:</b>&emsp;(Spining:10 €/month; Cardio dance:20 €/month; Strength workout:25 €/month;
+			<br/>&emsp;Comp. Training:35 €/month;)<br/><br/>
+			<select name="clas[]" size = 4 multiple>
+				<option>Spinning</option>
+				<option>Cardio dance</option>
+				<option>Strength workout</option>
+				<option>Competition training</option>
+			</select><br/><br/>
+		<!--Hidden inputs for checkbox select-->
+			<input type="hidden" name="pr[0]" value="10">
+			<input type="hidden" name="pr[1]" value="20">
+			<input type="hidden" name="pr[2]" value="25">
+			<input type="hidden" name="pr[3]" value="35">
+
+			<input type="submit" id="button" value="Join us now!"><br/>
+		</form>
+	</div>
+</main>
+
+<br/><br/><br/><br/><br/>
+<!--Authoring, date an contact-->
+<footer>
+	<address>
+		<p>Created by: Fco. Javier Olvera Martínez - <small>February 2018</small></p>
+		<p>2º ASIX - IAW - UT 5</p>
+		<a href="mailto:f.j.olvera@gmail.com">Contact email</a>
+	</address>
+</footer>
+
+<p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="¡CSS Válido!" />
+    </a>
+</p>
+
+</body>
+</html>

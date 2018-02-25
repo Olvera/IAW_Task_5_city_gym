@@ -1,0 +1,21 @@
+body,html{height:100%;padding:0;margin:0;background-color:aliceblue;}
+main{background:none repeat scroll 0 0 palegreen;border:1px solid;box-shadow:1px 1px 6px #000;
+	margin:0 auto;padding:0 41px 0 41px;width:60%;height:auto;}
+div{background-color:lemonchiffon;font-family:Verdana, Geneva,sans-serif;font-size:1em;color:teal;display:block;
+	width:auto;height:auto;margin:20px 10px;padding:10px 20px;
+	border:5px solid darkgreen;border-radius:15px;box-shadow:5px 5px 10px #000}
+img, .pub{display:block;clear: right;float: right; margin: 3%;width:12%}
+#i2, #i3{clear: left;float: left;}
+h2,h3,#homeDiv{text-align:center}
+#homeDiv img{margin: auto; float:left;width:15%}
+#homeDiv{margin: 2% auto; width: 80%}
+footer{font-family:verdana;font-size:1em;color:darkgreen;text-align:center;bottom: 0; margin: auto;padding:20px 20px}
+table, th, td {border: 1px solid darkgreen;}
+table{height: auto; width: 100%}
+#button{display: block;background-color: aliceblue;color: teal; font-weight: bold;padding: 5px;margin: 5px auto;border-radius: 8px 8px 8px 8px;}
+.topnav {overflow: hidden;background-color: palegreen; width: auto;}
+.topnav a {float: left; display: block; color: teal; text-align: center; padding: 14px 16px; text-decoration: none;
+	font-size: 17px;}
+.topnav a:hover {color: black;}
+.topnav .active{color:deepskyblue;}
+.topnav .icon { display: none;}
