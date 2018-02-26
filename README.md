@@ -1,33 +1,21 @@
 # 2nd ASIR - IAW Task #5
-###Creación de un examen con autocorrección (HTML, JavaScrip, XML y CSS; validación XML mediante DTD y/o XSD).
+###Implementation of PHP in a subscrition web where to input customer name and select some options in diferents input forms.
 
-###Introducción.
+###Introduction.
 
-  Cumpliendo con los requisitos de la tarea de esta unidad (UT_4) de la asignatura, el proyecto 
-consiste en una **_aplicación web_**, compuesta de páginas web, estilo con **_CSS_** (gestión de presentación), **_JavaScript_**
-(para modificar dinámicamente las páginas) y contenido textual con **_XML_** (preguntas, respuestas, etc., incorporadas 
-al codigo HTML mediante JS), que nos presenta una universidad ficticia, 'Total University', dedicada a la
-enseñanza de nuevas tecnologías.
-  Como introducción al ámbito educativo de dicho centro, además de una brebe presentación, se ofrece la posibilidad de 
-realizar un pequeño test auto-evaluable de 10 preguntas relacionadas con las TIC, internet, redes...
-  Las preguntas son de cinco tipos distintos de introducción o selección de respuestas:
+  The selected exercise is a gym subscription, where the costumer choose his level, extra services and specific trainning classes.
+  I used basic **_HTML_** code, **_CSS_** for web presentation, a few lines of **_JavaScript_** (for responsive dessign) and, to process and colect input data, **_PHP_**.
   
-        * Texto (cuadro de texto)
-        * Selección única (cuadro desplegable de opciones donde selecciona una)
-        * Selección múltiple (se muestran las opciones de las que elegir una o más de una)
-        * Checkbox (cuadros de selección a la izq. de las posibles soluciones, una o más)
-        * Radio (idéntica a la anterior, pero con pequeños circulos en lugar de cuadrados, de selección única)
+  The choosen inputs are:
+  
+        * Text (name and surname)
+        * Radio (customer level)
+        * Checkbox (extra service/s - one or more)
+        * Multiple select (trainning class/es - one or more)
     
-  Para completar la prueba se dan 5 minutos, durante los cuales puede consultarse, mediante un botón al final 
-del bloque de preguntas, los aciertos o errores hasta ese momento.
-  Finalizado ese tiempo, se recogen los datos en el instante '00:00' final y aparece un solo contenedor con la 
-información y resultado final obtenido.
+  Each opcion have an associated cost, reflected in the page content (**_city_gym.html_**). Once the choice is done, clicking a buton, it sends to another page (**_city_gym.php**) where it's shown a summary reflecting all the choices, its correspondent cost and the total amount (per month) of all the selections.
 
-###Notas sobre la implementación de código.
-
-Podemos decir que el grueso del código implementado es el archivo _JavaScript_, ya que se encarga de la gestión dinámica 
-de la página base de la aplicación, la de el examen (**_exam_1.html_**), y el archivo _XML_, donde se encuentran y estructuran
-los elementos que han de integrar las preguntas y sus respuestas.
+###About the code implementation.
 
   * Las primeras lineas de este **_JS_** definen las variables globales y gestionan el acceso y carga del texto del archivo 
       **_XML_** (**_onload=function()_**) en cada etiqueta correspondiente (**_gestionarXml()_**), así como inicializar la 
